@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影查询对话系统</title>
+    <style>p{margin:0}</style>
+</head>
+<body>
+<h4>Welcome to THU-SPMI Iqiyi dialogue system, you can talk about movies. We only support Chinese sentences at present.</h4>
+<h4>欢迎使用清华大学 SPMI lab 爱奇艺电影问询系统,您可以就以下内容进行信息查询：片名 年代 地区  导演 主演 类型 资费 评分 上映日期 片长 简介 等</h4>
+<h4>例如输入“近几年刘德华演了什么电影”、“有没有李连杰主演的动作片”、“不喜欢吓人的电影”等；输入“重来”即重新开始对话</h4>
+<h4>=== 此系统目前不支持集外词识别 ===</h4>
+
+<br/>
+<form action="">
+    {% csrf_token %}
+    <input type="submit" value="开始">
+</form>
+
+</body>
+</html>
